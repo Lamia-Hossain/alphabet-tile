@@ -8,7 +8,7 @@ function App() {
   const handleLetterClick = (letter) => {
     let text = outputString + letter;
 
-    const regex = /([A-Za-z])\1{2,}/g;
+    const regex = /([A-Z])\1{2,}/g;
 
     text = text.replace(regex, (match) =>
       "_".repeat(Math.ceil(match.length / 3))
